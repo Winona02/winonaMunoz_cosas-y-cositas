@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "nombre": "Cartera de cuero",
+        "precio": 50.00,
+        "descripcion": "Cartera de cuero genuino con múltiples compartimentos.",
+        "categoria": "Carteras",
+        "marca": "Marca A"
+    },
+    {
+        "id": 2,
+        "nombre": "Bolso de mano",
+        "precio": 75.00,
+        "descripcion": "Bolso de mano elegante y espacioso.",
+        "categoria": "Bolsos",
+        "marca": "Marca B"
+    },
+    {
+        "id": 3,
+        "nombre": "Mochila de cuero",
+        "precio": 120.00,
+        "descripcion": "Mochila de cuero resistente y duradera.",
+        "categoria": "Mochilas",
+        "marca": "Marca C"
+    },
+    {
+        "id": 4,
+        "nombre": "Cinturón de cuero",
+        "precio": 30.00,
+        "descripcion": "Cinturón de cuero ajustable y elegante.",
+        "categoria": "Cinturones",
+        "marca": "Marca D"
+    },
+    {
+        "id": 5,
+        "nombre": "Portafolio de cuero",
+        "precio": 150.00,
+        "descripcion": "Portafolio de cuero profesional con múltiples compartimentos.",
+        "categoria": "Portafolios",
+        "marca": "Marca E"
+    },
+    {
+        "id": 6,
+        "nombre": "Llaveros de cuero",
+        "precio": 10.00,
+        "descripcion": "Llaveros de cuero personalizados.",
+        "categoria": "Llaveros",
+        "marca": "Marca F"
+    },
+    {
+        "id": 7,
+        "nombre": "Zapatos de cuero",
+        "precio": 100.00,
+        "descripcion": "Zapatos de cuero cómodos y elegantes.",
+        "categoria": "Zapatos",
+        "marca": "Marca G"
+    },
+    {
+        "id": 8,
+        "nombre": "Guantes de cuero",
+        "precio": 40.00,
+        "descripcion": "Guantes de cuero suaves y cálidos.",
+        "categoria": "Guantes",
+        "marca": "Marca H"
+    },
+    {
+        "id": 9,
+        "nombre": "Funda de cuero para laptop",
+        "precio": 60.00,
+        "descripcion": "Funda de cuero protectora para laptop.",
+        "categoria": "Fundas",
+        "marca": "Marca I"
+    },
+    {
+        "id": 10,
+        "nombre": "Billetera de cuero",
+        "precio": 35.00,
+        "descripcion": "Billetera de cuero compacta y funcional.",
+        "categoria": "Billeteras",
+        "marca": "Marca J"
+    }
+]

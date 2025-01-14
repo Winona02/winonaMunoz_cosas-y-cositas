@@ -1,0 +1,11 @@
+//PALETA DE COLORES
+
+Background: #cbddd1
+Fucsia primario: #e42851
+Fucsia secundario: #d693a7
+Celeste primario: #34928a
+Celeste secundario: #63b6d2
+Naranja primario: #e2790e
+Naranja secundario: #ffba96
+
+Gradiente lineal 135°
