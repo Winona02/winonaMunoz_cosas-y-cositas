@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&display=swap');
+@import url(../stylesheets/style.css);
+@import url(../stylesheets/header.css);
+@import url(../stylesheets/footer.css);
+@import url(../stylesheets/product.css);
+@import url(../stylesheets/login.css);
+@import url(../stylesheets/register.css);
+@import url(../stylesheets/productsDetail.css);
+@import url(../stylesheets/productCart.css);

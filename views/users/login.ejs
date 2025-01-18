@@ -1,0 +1,21 @@
+<%- include('../partials/head.ejs') %>
+    <%- include('../partials/header.ejs') %>
+        <main>
+            <div class="container_form">
+                <h2 class="text">Iniciar Sesión</h2>
+                <div class="div_form">
+                    <form action="http://127.0.0.1:5500/MercadoLiebre/HTML/home.html" method="get" class="form_user">
+
+                        <input type="text" class="input-user" placeholder="Email" name="usuario"
+                            id="usuario">
+
+                        <input type="password" class="input-user" placeholder="Contraseña" name="contraseña"
+                            id="contraseña">
+
+                        <button type="submit" class="submit">Ingresar</button>
+                        <a href="../users/register" class="text_small">¿No tenés cuenta aún? Crear cuenta</a>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <%- include('../partials/footer.ejs') %>

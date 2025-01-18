@@ -1,0 +1,29 @@
+<%- include('../partials/head.ejs') %>
+    <%- include('../partials/header.ejs') %>
+
+        <main>
+            <div class="container_form">
+                <h2 class="text">Crear cuenta</h2>
+                <form action="#" method="get" class="form_user">
+                    <input type="text" class="input-user" placeholder="Nombre y Apellido" name="nane" required>
+
+                    <input type="number" class="input-user" placeholder="Teléfono" name="telefono" required>
+
+                    <input type="email" class="input-user" placeholder="Email" name="email" required>
+
+                    <label for="fechaNacimiento" class="label_bold">Fecha de nacimiento</label>
+                    <input type="date" class="input-user" name="fechaNacimiento" id="fechaNacimiento" required>
+
+                    <input type="text" class="input-user" placeholder="Dirección" name="domicilio" required>
+
+                    <input type="password" class="input-user" placeholder="Contraseña" name="contraseña" required>
+
+                    <input type="password" class="input-user" placeholder="Confirmar contraseña"
+                        name="confirmarContraseña" required>
+
+                    <button type="submit" class="submit">Crear cuenta</button>
+                    <a href="../users/login" class="text_small">¿Ya tenés una cuenta? Iniciá Sesión</a>
+                </form>
+            </div>
+        </main>
+        <%- include('../partials/footer.ejs') %>

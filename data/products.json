@@ -1,82 +1,247 @@
 [
     {
         "id": 1,
-        "nombre": "Cartera de cuero",
-        "precio": 50.00,
-        "descripcion": "Cartera de cuero genuino con múltiples compartimentos.",
-        "categoria": "Carteras",
-        "marca": "Marca A"
+        "image": "/images/producto-mochila.jpg",
+        "name": "Mochila Everlast1",
+        "price": "$20.000",
+        "color": [
+            "Rosa",
+            "Beige",
+            "Celeste"
+        ],
+        "description": "Mochila Everlast boca de pez 16 Pulg. 100% nylon c/bolsillos y portabotella",
+        "description_ext": "Mochila + bolso con correas regulares. Bolsillos laterales, delanteros, bolsillo antirrobo, compartimentos internos. Portabotella.",
+        "category": "mochilas",
+        "thumbnails": [
+            "/images/mochila-rosa.jpg",
+            "/images/mochila-beige.jpg",
+            "/images/mochila-celeste-atras.png"
+        ],
+        "productDetails": {
+            "marca": "Everlast",
+            "materiales": "100% nylon",
+            "dimensiones": [
+                {
+                    "label": "Tamaño",
+                    "value": "16 cm"
+                },
+                {
+                    "label": "Ancho",
+                    "value": "26 cm"
+                },
+                {
+                    "label": "Alto",
+                    "value": "38 cm"
+                },
+                {
+                    "label": "Profundidad",
+                    "value": "13 cm"
+                }
+            ],
+            "peso": "0,46 kg",
+            "en Stock": "22 unidades"
+        }
     },
     {
         "id": 2,
-        "nombre": "Bolso de mano",
-        "precio": 75.00,
-        "descripcion": "Bolso de mano elegante y espacioso.",
-        "categoria": "Bolsos",
-        "marca": "Marca B"
+        "image": "/images/producto-mochila-2.jpg",
+        "name": "Mochila Everlast2",
+        "price": "$20.000",
+        "color": [
+            "sSalmón",
+            "Celeste",
+            "Negro"
+        ],
+        "description": "Mochila ideal para el uso diario.",
+        "description_ext": "Descripción extra",
+        "category": "mochilas",
+        "thumbnails": [],
+        "productDetails": {
+            "marca": "Everlast",
+            "materiales": "Cordura",
+            "dimensiones": [
+                {
+                    "label": "Tamaño",
+                    "value": "18 cm"
+                },
+                {
+                    "label": "Ancho",
+                    "value": "28 cm"
+                },
+                {
+                    "label": "Alto",
+                    "value": "40 cm"
+                },
+                {
+                    "label": "Profundidad",
+                    "value": "15 cm"
+                }
+            ],
+            "peso": "0,50 kg",
+            "en Stock": "15 unidades"
+        }
     },
     {
         "id": 3,
-        "nombre": "Mochila de cuero",
-        "precio": 120.00,
-        "descripcion": "Mochila de cuero resistente y duradera.",
-        "categoria": "Mochilas",
-        "marca": "Marca C"
+        "image": "/images/producto-mochila-3.jpg",
+        "name": "Mochila Everlast3",
+        "price": "$20.000",
+        "color": [
+            "Azul",
+            "Camel",
+            "Negro"
+        ],
+        "description": "Mochila compacta y ligera.",
+        "description_ext": "Descripción extra",
+        "category": "mochilas",
+        "thumbnails": [
+            "/images/mochila-beige.jpg",
+            "/images/mochila-celeste.jpg"
+        ],
+        "productDetails": {
+            "marca": "Everlast",
+            "materiales": "100% nylon",
+            "dimensiones": [
+                {
+                    "label": "Tamaño",
+                    "value": "17 cm"
+                },
+                {
+                    "label": "Ancho",
+                    "value": "27 cm"
+                },
+                {
+                    "label": "Alto",
+                    "value": "39 cm"
+                },
+                {
+                    "label": "Profundidad",
+                    "value": "14 cm"
+                }
+            ],
+            "peso": "0,48 kg",
+            "en Stock": "20 unidades"
+        }
     },
     {
         "id": 4,
-        "nombre": "Cinturón de cuero",
-        "precio": 30.00,
-        "descripcion": "Cinturón de cuero ajustable y elegante.",
-        "categoria": "Cinturones",
-        "marca": "Marca D"
-    },
-    {
-        "id": 5,
-        "nombre": "Portafolio de cuero",
-        "precio": 150.00,
-        "descripcion": "Portafolio de cuero profesional con múltiples compartimentos.",
-        "categoria": "Portafolios",
-        "marca": "Marca E"
-    },
-    {
-        "id": 6,
-        "nombre": "Llaveros de cuero",
-        "precio": 10.00,
-        "descripcion": "Llaveros de cuero personalizados.",
-        "categoria": "Llaveros",
-        "marca": "Marca F"
+        "image": "/images/producto-mochila-4.jpg",
+        "name": "Mochila Everlast4",
+        "price": "$20.000",
+        "color": [
+            "Gris",
+            "Rosa viejo",
+            "Beige"
+        ],
+        "description": "Mochila resistente al agua.",
+        "description_ext": "Descripción extra",
+        "category": "mochilas",
+        "thumbnails": [],
+        "productDetails": {
+            "marca": "Everlast",
+            "materiales": "Cordura",
+            "dimensiones": [
+                {
+                    "label": "Tamaño",
+                    "value": "19 cm"
+                },
+                {
+                    "label": "Ancho",
+                    "value": "29 cm"
+                },
+                {
+                    "label": "Alto",
+                    "value": "41 cm"
+                },
+                {
+                    "label": "Profundidad",
+                    "value": "16 cm"
+                }
+            ],
+            "peso": "0,52 kg",
+            "en Stock": "18 unidades"
+        }
     },
     {
         "id": 7,
-        "nombre": "Zapatos de cuero",
-        "precio": 100.00,
-        "descripcion": "Zapatos de cuero cómodos y elegantes.",
-        "categoria": "Zapatos",
-        "marca": "Marca G"
+        "image": "/images/producto-mochila.jpg",
+        "name": "Mochila Everlast1",
+        "price": "$20.000",
+        "color": [
+            "Rosa",
+            "Beige",
+            "Celeste"
+        ],
+        "description": "Mochila Everlast boca de pez 16 Pulg. 100% nylon c/bolsillos y portabotella",
+        "description_ext": "Mochila + bolso con correas regulares. Bolsillos laterales, delanteros, bolsillo antirrobo, compartimentos internos. Portabotella.",
+        "category": "mochilas",
+        "thumbnails": [
+            "/images/mochila-rosa.jpg",
+            "/images/mochila-beige.jpg",
+            "/images/mochila-celeste-atras.png"
+        ],
+        "productDetails": {
+            "marca": "Everlast",
+            "materiales": "100% nylon",
+            "dimensiones": [
+                {
+                    "label": "Tamaño",
+                    "value": "16 cm"
+                },
+                {
+                    "label": "Ancho",
+                    "value": "26 cm"
+                },
+                {
+                    "label": "Alto",
+                    "value": "38 cm"
+                },
+                {
+                    "label": "Profundidad",
+                    "value": "13 cm"
+                }
+            ],
+            "peso": "0,46 kg",
+            "en Stock": "22 unidades"
+        }
     },
     {
-        "id": 8,
-        "nombre": "Guantes de cuero",
-        "precio": 40.00,
-        "descripcion": "Guantes de cuero suaves y cálidos.",
-        "categoria": "Guantes",
-        "marca": "Marca H"
-    },
-    {
-        "id": 9,
-        "nombre": "Funda de cuero para laptop",
-        "precio": 60.00,
-        "descripcion": "Funda de cuero protectora para laptop.",
-        "categoria": "Fundas",
-        "marca": "Marca I"
-    },
-    {
-        "id": 10,
-        "nombre": "Billetera de cuero",
-        "precio": 35.00,
-        "descripcion": "Billetera de cuero compacta y funcional.",
-        "categoria": "Billeteras",
-        "marca": "Marca J"
+        "id": 6,
+        "image": "/images/producto-mochila-2.jpg",
+        "name": "Mochila Everlast2",
+        "price": "$20.000",
+        "color": [
+            "sSalmón",
+            "Celeste",
+            "Negro"
+        ],
+        "description": "Mochila ideal para el uso diario.",
+        "description_ext": "Descripción extra",
+        "category": "mochilas",
+        "thumbnails": [],
+        "productDetails": {
+            "marca": "Everlast",
+            "materiales": "Cordura",
+            "dimensiones": [
+                {
+                    "label": "Tamaño",
+                    "value": "18 cm"
+                },
+                {
+                    "label": "Ancho",
+                    "value": "28 cm"
+                },
+                {
+                    "label": "Alto",
+                    "value": "40 cm"
+                },
+                {
+                    "label": "Profundidad",
+                    "value": "15 cm"
+                }
+            ],
+            "peso": "0,50 kg",
+            "en Stock": "15 unidades"
+        }
     }
 ]

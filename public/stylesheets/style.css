@@ -1,8 +1,251 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+:root {
+  --background: #cbddd1;
+  --fucsia-primario: #e42851;
+  --fucsia-secundario: #d693a7;
+  --fucsia-terciario: #bb2b4a;
+  --celeste-primario: #34928a;
+  --celeste-secundario: #BDDAD0;
+  --naranja-primario: #e2790e;
+  --naranja-secundario: #ffba96;
+  --blanco: #ffffff;
+  --negro: #000000;
+  --border-article: #dddddd;
+  --sombras: rgba(124, 123, 123, 0.51);
 }
 
-a {
-  color: #00B7FF;
+* {
+  text-decoration: none;
+  list-style: none;
+  color: var(--negro);
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: var(--background);
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0px;
+}
+
+/* BANNER PRINCIPAL*/
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  .slides_mobile {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+
+  .slides_mobile img {
+    width: 100%;
+    display: none;
+  }
+
+  .slides_mobile img.active {
+    display: block;
+  }
+
+
+  /* Flechas de navegación */
+  button.prev,
+  button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--sombras);
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  button.prev {
+    left: 10px;
+  }
+
+  button.next {
+    right: 10px;
+  }
+
+  button:focus {
+    outline: none;
+  }
+}
+
+/* BANNER TABLET */
+
+.slides_tablet,
+.prev_tablet,
+.next_tablet {
+  display: none;
+}
+
+
+.subheading {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: var(--naranja-primario);
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* BANNER DE LOGOS DE MARCAS */
+.brand-slider {
+  background-color: var(--blanco);
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  .brand-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    align-items: center;
+  }
+
+  .brand {
+    min-width: 25%;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .brand img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Flechas de navegación */
+  button.prev-brand,
+  button.next-brand {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--sombras);
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  button.prev-brand {
+    left: 10px;
+  }
+
+  button.next-brand {
+    right: 10px;
+  }
+
+  button:focus {
+    outline: none;
+  }
+}
+
+
+/* MEDIOS DE PAGO */
+
+.medios_pago {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--blanco);
+  padding: 5px;
+  margin: 15px 10px;
+  justify-content: space-evenly;
+
+  .img_medio_de_pago {
+    width: 30%;
+    object-fit: contain;
+  }
+}
+
+@media (min-width:768px) {
+
+  .slider {
+
+    .slides_mobile,
+    .prev,
+    .next {
+      display: none;
+    }
+
+    .slides_mobile img.active {
+      display: none !important;
+    }
+
+    .slides_tablet,
+    .prev_tablet,
+    .next_tablet {
+      display: block;
+    }
+
+    .slides_tablet {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%;
+    }
+
+    .slides_tablet img {
+      width: 100%;
+      display: none;
+    }
+
+    .slides_tablet img.active_tablet {
+      display: block;
+    }
+
+
+    /* Flechas de navegación */
+    button.prev_tablet,
+    button.next_tablet {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: var(--sombras);
+      color: white;
+      border: none;
+      padding: 5px;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    button.prev_tablet {
+      left: 10px;
+    }
+
+    button.next_tablet {
+      right: 10px;
+    }
+
+    button:focus {
+      outline: none;
+    }
+  }
+
+  .subheading{
+    font-size: 1.5rem;
+  }
+
+  .brand-slider{
+
+    .brand {
+      min-width: 20%;
+      box-sizing: border-box;
+      text-align: center;
+      justify-content: space-between;
+    }
+  }
 }

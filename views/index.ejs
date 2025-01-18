@@ -1,6 +1,90 @@
-  <%- include("./partials/head.ejs") %>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<%- include('./partials/head.ejs') %>
+    <%- include('./partials/header.ejs') %>
+
+        <main>
+            <!-- Banner -->
+            <div class="slider">
+                <button class="prev">&#10094;</button>
+                <div class="slides_mobile">
+                    <img src="/images/banner-mobile.jpg" alt="Banner Trendy" class="active">
+                    <img src="/images/banner-mobile-amayra.jpg" alt="Banner Amayra">
+                    <img src="/images/banner-mobile-everlast.jpg" alt="Banner Everlast">
+                    <img src="/images/banner-mobile-discovery.jpg" alt="Banner Discovery">
+                </div>
+                <button class="next">&#10095;</button>
+
+
+                <!-- BANNER PARA DESKTOP Y TABLET -->
+
+                <button class="prev_tablet">&#10094;</button>
+                <div class="slides_tablet">
+                    <img src="/images/banner-trendy.jpg" alt="Banner Trendy" class="active_tablet">
+                    <img src="/images/banner-oreiro.jpg" alt="Banner Las Oreiro">
+                    <img src="/images/banner-everlast.jpg" alt="Banner Everlast">
+                    <img src="/images/banner-discovery.jpg" alt="Banner Discovery">
+                </div>
+                <button class="next_tablet">&#10095;</button>
+            </div>
+
+
+
+            <h2 class="subheading">NUESTRAS PRINCIPALES MARCAS</h2>
+            <div class="brand-slider">
+                <button class="prev-brand">&#10094;</button>
+                <div class="brand-slides">
+                    <% const marcas=['las-oreiro', 'amayra' , 'trendy' , 'everlast' , 'discovery' , 'alpine-skate'
+                        , 'wilson' , 'wellington-polo' , 'head' , 'travel-tech' ]; %>
+                        <% marcas.forEach(marca=> { %>
+                            <div class="brand">
+                                <img src="/images/logo-<%= marca %>.jpg" alt="Logo <%= marca.replace('-', ' ') %>">
+                            </div>
+                            <% }) %>
+                </div>
+                <button class="next-brand">&#10095;</button>
+            </div>
+
+
+            <h2 class="subheading">NOVEDADES</h2>
+            <section class="novedades">
+                <% product.forEach(producto=> { %>
+                    <article class="novedad_item">
+                        <a href="/products/<%= producto.id %>">
+                            <img src="<%= producto.image %>" alt="Imagen de <%= producto.name %>">
+                        </a>
+                        <a href="/products/<%= producto.id %>">
+                            <h3>
+                                <%= producto.name %>
+                            </h3>
+                        </a>
+                        <p class="price">
+                            <%= producto.price %>
+                        </p>
+                        <button class="add_cart">Agregar al carrito</button>
+                    </article>
+                    <% }) %>
+            </section>
+
+            <h2 class="subheading">PRODUCTO DESTACADO DEL MES</h2>
+            <section class="section_featured_product">
+                <img src="../images/producto-destacado-del-mes.jpg" class="img_featured_product"
+                    alt="Producto destacado del mes">
+                <h3 class="product_subheading">Bolso UNLIMITED... estilo y funcionalidad.</h3>
+                <p>Bolso deportivo diseñado para acompañarte en tu día a día... Perfecto para el gimnasio, viajes cortos
+                    o cualquier actividad diaria...</p>
+            </section>
+
+            <h2 class="subheading">MEDIOS DE PAGO</h2>
+            <div class="medios_pago">
+                <img src="../images/tarjetas-bancarias-debito-credito.jpg" class="img_medio_de_pago"
+                    alt="Tarjetas bancarias">
+                <img src="../images/logo-mercado-pago.jpg" class="img_medio_de_pago" alt="Mercado Pago">
+                <img src="../images/mercado-credito-logp.png" class="img_medio_de_pago" alt="Mercado Crédito">
+            </div>
+
+            <script src="/javascripts/slider.js"></script>
+            <script src="/javascripts/slider2.js"></script>
+            <script src="/javascripts/sliderTablet.js"></script>
+
+        </main>
+
+        <%- include('./partials/footer.ejs') %>

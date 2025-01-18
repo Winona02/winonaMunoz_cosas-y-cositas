@@ -1,0 +1,38 @@
+<%- include('../partials/head.ejs') %>
+    <%- include('../partials/header.ejs') %>
+        <main>
+            <h2 class="subheading">Carrito de Compras</h2>
+            <section class="cart">
+
+                <article class="article_cart">
+                    <img src="/images/mochila-celeste.jpg" class="image_product_cart" alt="Mochila Everlast">
+                    <div class="div_name_color">
+                        <h3 class="product_name">Mochila Everlast</h3>
+                        <p class="text_small">(celeste)</p>
+                    </div>
+                    <p class="price">$20.000</p>
+                    <button class="delete_btn"><i class="fa-solid fa-trash"></i></button>
+                </article>
+                <article class="article_cart">
+                    <img src="/images/mochila-celeste.jpg" class="image_product_cart" alt="Mochila Everlast">
+                    <div class="div_name_color">
+                        <h3 class="product_name">Mochila Everlast</h3>
+                        <p class="text_small">(celeste)</p>
+                    </div>
+                    <p class="price">$20.000</p>
+                    <button class="delete_btn"><i class="fa-solid fa-trash"></i></button>
+                </article>
+            </section>
+            <section class="section_total">
+                <div class="subtotal">
+                    <p>Subtotal</p>
+                    <p>(sin envío):</p>
+                </div>
+                <p class="total">Total:</p>
+                <p class="value_subtotal">$40.000</p>
+                <p class="value_total">$40.000</p>
+                <button class="add_cart">Finalizar Compra</button>
+            </section>
+
+        </main>
+        <%- include('../partials/footer.ejs') %>
