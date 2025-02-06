@@ -1,0 +1,57 @@
+<%- include('../partials/head.ejs') %>
+    <%- include('../partials/header.ejs') %>
+
+        <main>
+
+            <div class="container_form">
+
+                <h3 class="text">Editar Producto</h3>
+                <form action="/admin/edit/<%= product.id %>" method="POST" class="form_edit">
+                    <label>Nombre:</label>
+                    <input type="text" name="name" class="input-user" value="<%= product.name %>" required>
+
+                    <label>Imagen:</label>
+                    <input type="text" name="image" class="input-user" value="<%= product.image %>">
+
+                    <label>Precio:</label>
+                    <input type="text" name="price" class="input-user" value="<%= product.price %>" required>
+
+                    <label>Colores:</label>
+                    <input type="text" name="color" class="input-user" value="<%= product.color %>">
+
+                    <label>Descripción:</label>
+                    <textarea name="description" class="input-user" required><%= product.description %></textarea>
+
+                    <label>Descripción extra:</label>
+                    <textarea name="description_ext" class="input-user" required><%= product.description %></textarea>
+
+                    <label>Categoría:</label>
+                    <input type="text" name="category" class="input-user" value="<%= product.category %>">
+
+                    <label>Imágenes miniatura:</label>
+                    <div id="thumbnail-container">
+                        <% product.thumbnails.forEach(function(image, index) { %>
+                            <input type="text" name="thumbnails[]" class="input-user" value="<%= image %>">
+                            <% }); %>
+                    </div>
+                    <label>Detalles del producto:</label>
+                    <label>Marca:</label>
+                    <input type="text" name="marca" class="input-user" value="<%= product.productDetails.marca %>">
+
+                    <label>Materiales:</label>
+                    <input type="text" name="materiales" class="input-user"
+                        value="<%= product.productDetails.materiales %>">
+
+                    <label>Peso:</label>
+                    <input type="text" name="peso" class="input-user" value="<%= product.productDetails.peso %>">
+
+                    <label>Stock:</label>
+                    <input type="text" name="stock" class="input-user"
+                        value="<%= product.productDetails['en Stock'] %>">
+
+                    <button type="submit" class="submit">Actualizar</button>
+                </form>
+            </div>
+        </main>
+
+        <%- include('../partials/footer.ejs') %>

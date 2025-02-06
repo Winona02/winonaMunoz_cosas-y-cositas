@@ -4,9 +4,9 @@
   --fucsia-secundario: #d693a7;
   --fucsia-terciario: #bb2b4a;
   --celeste-primario: #34928a;
-  --celeste-secundario: #BDDAD0;
+  --celeste-secundario: #97c8b6;
   --naranja-primario: #e2790e;
-  --naranja-secundario: #ffba96;
+  --naranja-secundario: #e3a07c;
   --blanco: #ffffff;
   --negro: #000000;
   --border-article: #dddddd;
@@ -34,8 +34,6 @@ body {
 .slider {
   position: relative;
   width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
   overflow: hidden;
 
   .slides_mobile {
@@ -103,8 +101,8 @@ body {
   background-color: var(--blanco);
   position: relative;
   width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
+  /* max-width: 1000px;
+  margin: 0 auto; */
   overflow: hidden;
 
   .brand-slides {
@@ -246,6 +244,15 @@ body {
       box-sizing: border-box;
       text-align: center;
       justify-content: space-between;
+    }
+  }
+
+  .medios_pago {
+    padding: 0px;
+    margin: 10px;
+  
+    .img_medio_de_pago {
+      max-height: 15vh;
     }
   }
 }

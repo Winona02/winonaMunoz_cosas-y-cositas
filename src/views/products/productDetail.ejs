@@ -1,0 +1,101 @@
+<%- include('../partials/head.ejs') %>
+        <%- include('../partials/header.ejs') %>
+                <main>
+                        <div class="container_img_detail">
+
+                                <div class="product-detail">
+                                        <img src="<%= product.image %>" class="image_product" alt="<%= product.name %>">
+                                        <div class="thumbnails">
+                                                <% product.thumbnails.forEach(thumbnail=> { %>
+                                                        <img src="<%= thumbnail %>" class="image_thumbnail"
+                                                                alt="<%= product.name %>">
+                                                        <% }) %>
+                                        </div>
+                                </div>
+                                <div class="product_info">
+                                        <p class="description">
+                                                <%= product.description %>
+                                        </p>
+                                        <p class="price">
+                                                <%= product.price %>
+                                        </p>
+                                        <p class="text_small">Ver formas de pago</p>
+
+                                        <p class="description_color">Colores:
+                                                <% product.color.forEach(color=> { %>
+                                                        <%= color %>
+                                                                <% }) %>
+                                        </p>
+
+                                        <p class="description_color">
+                                                <%= product.description_ext %>
+                                        </p>
+
+                                        <div class="container_quantity_color">
+                                                <div class="container_color">
+                                                        <label for="color" class="label">Color</label>
+                                                        <select name="color" id="color" class="input-user">
+                                                                <% product.color.forEach(color=> { %>
+                                                                        <option value="<%= color %>">
+                                                                                <%= color %>
+                                                                        </option>
+                                                                        <% }) %>
+                                                        </select>
+                                                </div>
+                                                <div class="container_quantity">
+                                                        <label for="quantity" class="label">Cantidad</label>
+                                                        <select name="quantity" id="quantity" class="input-user">
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                        </select>
+                                                </div>
+                                        </div>
+                                        <button class="add_cart">Agregar al carrito</button>
+                                </div>
+                        </div>
+
+                        <div class="container_detail_table">
+                                <h2 class="subheading">Detalle del Producto</h2>
+                                <table class="detail_table">
+                                        <% const keys=Object.keys(product.productDetails); %>
+                                                <% for (let i=0; i < keys.length; i++) { %>
+                                                        <% const key=keys[i]; %>
+                                                                <% if (Array.isArray(product.productDetails[key])) { %>
+                                                                        <% for (let j=0; j <
+                                                                                product.productDetails[key].length; j++)
+                                                                                { %>
+                                                                                <tr>
+                                                                                        <td>
+                                                                                                <%= product.productDetails[key][j].label
+                                                                                                        %>:
+                                                                                        </td>
+                                                                                        <td>
+                                                                                                <%= product.productDetails[key][j].value
+                                                                                                        %>
+                                                                                        </td>
+                                                                                </tr>
+                                                                                <% } %>
+                                                                                        <% } else { %>
+                                                                                                <tr>
+                                                                                                        <td>
+                                                                                                                <%= key.charAt(0).toUpperCase()
+                                                                                                                        +
+                                                                                                                        key.slice(1)
+                                                                                                                        %>
+                                                                                                                        :
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                                <%= product.productDetails[key]
+                                                                                                                        %>
+                                                                                                        </td>
+                                                                                                </tr>
+                                                                                                <% } %>
+                                                                                                        <% } %>
+                                </table>
+                        </div>
+
+                </main>
+                <%- include('../partials/footer.ejs') %>

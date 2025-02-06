@@ -1,4 +1,4 @@
-footer{
+footer {
     padding: 10px 0px 10px;
     box-shadow: 0px 0px 10px rgb(173, 167, 167);
 }
@@ -25,10 +25,6 @@ footer{
         font-size: 2rem;
     }
 
-    .instagram:hover,
-    .facebook:hover {
-        color: var(--fucsia-primario);
-    }
 
     .form_newsletter {
         width: 100%;
@@ -39,7 +35,7 @@ footer{
             border: 1px solid white;
             border-top-left-radius: 8px;
             border-bottom-left-radius: 8px;
-            width: 80%;
+            width: 100%;
             padding: 10px;
         }
 
@@ -53,9 +49,8 @@ footer{
     }
 }
 
-.div_footer_info{
+.div_footer_info {
     margin: 10px;
-
 
     .subheading_footer {
         font-size: 1rem;
@@ -63,18 +58,106 @@ footer{
         margin: 20px 30px 5px;
 
     }
-    
-    .links_footer{
+
+    .links_footer {
         margin: 0px 10px;
         font-weight: 300;
         font-size: 0.8rem;
     }
 
-    .icon_contactme{
+    .icon_contactme {
         margin-right: 5px;
     }
 
-    .img_pagos_footer{
+    .img_pagos_footer {
         width: 60%;
+    }
+}
+
+@media (min-width:768px) {
+
+    footer {
+        
+        max-height: 30vh;
+        overflow: hidden;
+    }
+
+    .div_footer_redes {
+
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+
+        div{
+            width: 50%;
+        }
+
+        .subheading_footer {
+            margin: 0 0 5px;
+        }
+
+        ul {
+            justify-content: center;
+
+            .instagram,
+            .facebook {
+                font-size: 1.5rem;
+                margin: 0 10px;
+            }
+        }
+
+        .form_newsletter {
+
+            justify-content: center;
+
+            .input_email {
+                width: 50%;
+                padding: 5px;
+            }
+
+            .submit_mail{
+                padding: 5px;
+            }
+        }
+
+    }
+
+    .div_footer_info {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 20px;
+
+        .div_links_footer {
+
+            li{
+                margin: -5px 0;
+            }
+        }
+
+        .subheading_footer {
+            margin: 10px 0 0;
+            text-align: center;
+        }
+
+        .div_img_pagos {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+        }
+
+        .img_pagos_footer {
+            width: 50%;
+        }
+    }
+
+}
+
+@media (min-width:1024px) {
+
+    .instagram:hover,
+    .facebook:hover {
+        color: var(--fucsia-primario);
     }
 }

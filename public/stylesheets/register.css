@@ -1,0 +1,12 @@
+@media (min-width: 768px) {
+
+    .form_user {
+
+        .input_email{
+            margin-bottom: 30px;
+        }
+        .input_fechaNacimento {
+            margin: 5px;
+        }
+    }
+}

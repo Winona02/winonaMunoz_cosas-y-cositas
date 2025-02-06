@@ -24,7 +24,6 @@
 .burger_button {
     font-size: 30px;
     z-index: 101;
-    cursor: pointer;
 }
 
 #funcion_burger_button {
@@ -102,11 +101,15 @@
 
 @media (min-width:768px) {
 
+    .header{
+        max-height: 25vh;
+    }
+
     .header_container {
         display: grid;
-        grid-template-columns: 32% 32% 32%;
+        grid-template-columns: 20% 40% 35%;
         grid-template-rows: 70% 30%;
-        gap: 10px;
+        gap: 3px;
         margin-bottom: 15px;
     }
 
@@ -120,13 +123,22 @@
         display: flex;
     }
 
+    #logo{
+        height: 10vh;
+        width: auto;
+    }
+
+    .search_bar{
+        justify-content: center;
+    }
+
     .input_search_bar {
         border-style: none;
         border: 1px solid white;
         border-top-left-radius: 8px;
         border-bottom-left-radius: 8px;
         width: 80%;
-        padding: 10px;
+        padding: 5px 10px;
     }
 
     .submit_search_bar {
@@ -134,7 +146,7 @@
         border: 1px solid white;
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
-        padding: 10px;
+        padding: 5px 10px;
     }
 
 
@@ -144,7 +156,7 @@
     }
 
     .menu_nav_ul,
-    .user_nav ul {
+    .user_nav_ul {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -154,7 +166,7 @@
     .menu_nav_a, .user_nav_a{
         background-color: var(--celeste-primario);
         color: var(--blanco);
-        padding: 5px 10px;
+        padding: 3px 10px;
         border-radius: 5px;
         font-size: 16px;
     }
@@ -166,4 +178,52 @@
             color: var(--blanco)
         }
     }
+}
+
+@media (min-width:1024px) {
+
+    .header_container{
+        margin: 20px;
+    }
+    #logo{
+        height: 12vh;
+        width: auto;
+        cursor: pointer;
+    }
+
+    .input_search_bar{
+    padding: 10px 15px;
+    }
+
+    .submit_search_bar{
+        cursor: pointer;
+    }
+
+    .menu_nav{
+        width: 80%;
+    }
+
+    .menu_nav_ul li, .user_nav_ul li {
+        transition: transform 0.5s ease-in-out;
+
+    }
+
+    .menu_nav_ul li:hover, .user_nav_ul li:hover{
+        transform: scale(1.1);
+    }
+    
+    .user_nav_a, .menu_nav_a{
+        font-size: 18px;
+        padding: 5px 15px;
+        transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+
+    .user_nav_a:hover{
+        background-color: var(--naranja-secundario);
+    }
+
+    .menu_nav_a:hover{
+        background-color: var(--celeste-secundario);
+    }
+
 }

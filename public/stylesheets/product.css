@@ -44,7 +44,7 @@
     cursor: pointer;
 }
 
-.novedad-item button:hover {
+.add_cart:hover {
     background-color: var(--fucsia-terciario);
 }
 
@@ -78,9 +78,33 @@
 @media (min-width:768px){
 
     .novedades{
-        gap: 6px;
+        gap: 20px;
+        margin: 1rem;
     }
     .novedad_item{
-        width: 30%;
+        width: 25%;
+    }
+
+    .section_featured_product{
+        flex-direction: row;
+        align-items: center;
+        margin: 1rem;
+    
+        .img_featured_product{
+            width: 50%;
+        }
+
+        div{
+            margin: 0 auto;
+        }
+
+        .product_subheading{
+            font-size: 2rem;
+            margin: 0 30px 10px;
+        }
+        p{
+            font-size: 1.2rem;
+            margin: 0px 30px;
+        }
     }
 }

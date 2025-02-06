@@ -81,3 +81,16 @@
     }
 }
 
+@media (min-width: 768px) {
+    
+    .cart, .section_total{
+        margin: 20px 50px;
+    }
+
+    .text_small{
+        margin-top: -10px;
+        text-align: center;
+        grid-column: 1 / 3;
+        cursor: pointer;
+    }
+}

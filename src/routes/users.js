@@ -6,6 +6,6 @@ router.get('/login', userController.login);
 
 router.get('/register', userController.register);
 
-router.get('/admin', userController.admin);
+// router.get('/profile', userController.profile);
 
 module.exports = router;
