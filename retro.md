@@ -1,44 +1,44 @@
-Retrospectiva de los Sprint 1 2 y 3
+<h1 align="center">Retrospectiva de los Sprint 1 2 y 3</h1>
 
-🌟 Starfish Retrospective
+<h3 align="center">🌟 Starfish Retrospective</h3>
 
-⭐ Seguir haciendo (Keep Doing)
+<h3>⭐ Seguir haciendo (Keep Doing)</h3>
 
-Mantener el compromiso con el desarrollo del proyecto.
+<p>Mantener el compromiso con el desarrollo del proyecto.
 
-Buscar mejorar y aprender continuamente en cada sprint.
+Buscar mejorar y aprender continuamente en cada sprint.</p>
 
-🚀 Empezar a hacer (Start Doing)
+<h3>🚀 Empezar a hacer (Start Doing)</h3> 
 
-Tomarme el tiempo necesario para realizar cada sprint en su debido momento.
+<p>Tomarme el tiempo necesario para realizar cada sprint en su debido momento.
 
 Establecer un cronograma de trabajo más estructurado para cumplir con los objetivos.
 
-Pedir feedback de manera más proactiva para mejorar el proyecto de forma continua.
+Pedir feedback de manera más proactiva para mejorar el proyecto de forma continua.</p>
 
-❌ Dejar de hacer (Stop Doing)
+<h3>❌ Dejar de hacer (Stop Doing)</h3> 
 
-Postergar las entregas solo porque no son obligatorias.
+<p>Postergar las entregas solo porque no son obligatorias.
 
 Restarle importancia al proceso de cada sprint.
 
-Dejar los avances del proyecto en último lugar por otras prioridades.
+Dejar los avances del proyecto en último lugar por otras prioridades.</p>
 
-🔄 Hacer más (More Of)
+<h3>🔄 Hacer más (More Of)</h3> 
 
-Organizar mejor mi tiempo para poder avanzar sin prisas.
+<p>Organizar mejor mi tiempo para poder avanzar sin prisas.
 
 Enfocarme en la planificación para evitar atrasos.
 
-Considerar cada sprint como una oportunidad de crecimiento y aprendizaje.
+Considerar cada sprint como una oportunidad de crecimiento y aprendizaje.</p>
 
-⏬ Hacer menos (Less Of)
+<h3>⏬ Hacer menos (Less Of)</h3> 
 
-Dejar que los inconvenientes personales y laborales afecten demasiado mi ritmo de trabajo.
+<p>Dejar que los inconvenientes personales y laborales afecten demasiado mi ritmo de trabajo.
 
-Procrastinar los avances del proyecto por falta de presión externa.
+Procrastinar los avances del proyecto por falta de presión externa.</p>
 
-📝 Reflexión Final
+<h3>📝 Reflexión Final</h3> 
 
-En este sprint, me di cuenta de la importancia de gestionar mejor mi tiempo y prioridades. Aunque las entregas no eran obligatorias, habría sido más provechoso realizarlas en tiempo y forma para recibir feedback adecuado y mejorar antes de avanzar al siguiente paso. Aprendí que cada sprint es una oportunidad para crecer y que, con mejor organización, puedo optimizar mi rendimiento en el proyecto. ¡A mejorar en el próximo sprint! 🚀
+<p>En este sprint, me di cuenta de la importancia de gestionar mejor mi tiempo y prioridades. Aunque las entregas no eran obligatorias, habría sido más provechoso realizarlas en tiempo y forma para recibir feedback adecuado y mejorar antes de avanzar al siguiente paso. Aprendí que cada sprint es una oportunidad para crecer y que, con mejor organización, puedo optimizar mi rendimiento en el proyecto. ¡Espero mejorar en el próximo sprint! 🚀</p>
 
