@@ -1,0 +1,35 @@
+[
+    {
+    "id": 1,
+    "name&surname": "Juan Pérez",
+    "phone": "1112345678",
+    "email": "juan.perez@example.com",
+    "address": "Av. Siempre Viva 742, Buenos Aires",
+    "birth_date": "1990-05-15",
+    "password": "password123",
+    "category": "admin",
+    "image": "juan.jpg"
+    },
+    {
+    "id": 2,
+    "name&surname": "María Gómez",
+    "phone": "1198765432",
+    "email": "maria.gomez@example.com",
+    "address": "Calle Falsa 123, Córdoba",
+    "birth_date": "1985-09-22",
+    "password": "mariaPass",
+    "category": "user",
+    "image": "maria.jpg"
+    },
+    {
+    "id": 3,
+    "name&surname": "Carlos López",
+    "phone": "1155556666",
+    "email": "carlos.lopez@example.com",
+    "address": "San Martín 456, Mendoza",
+    "birth_date": "1993-12-10",
+    "password": "carlosSecure",
+    "category": "user",
+    "image": "carlos.jpg"
+    }
+    ]
